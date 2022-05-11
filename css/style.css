@@ -2,6 +2,10 @@ h1 {
   font-family: helvetica;
 }
 
+h2 { 
+  font-weight: bold; 
+} 
+
 p {
   color: red;
 }
@@ -29,3 +33,8 @@ div {
   font: 1rem 'Fira Sans', sans-serif;
   margin-bottom: .5rem;
 }
+
+ol {
+  list-style: decimal;
+}
+li {margin-left: 50px;}
