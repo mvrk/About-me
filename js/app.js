@@ -1,7 +1,7 @@
 'use strict';
 
 let answerOne = prompt('what\'s your name?');
-alert('welcome ' + answerOne +'!');
+alert(`welcome ${answerOne}!`);
 console.log(answerOne);
 
 //if conditional based prompt command
@@ -53,4 +53,5 @@ default:
 // console.log('my favorite colors are blue and Red.');
 }
 
-confirm(answerOne +', you know me better now, can we make friends?');
+confirm(`${answerOne}, you know me better now, can we make friends?`);
+
