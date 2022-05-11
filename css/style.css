@@ -17,3 +17,10 @@ section p.more-content {
 #something-else {
   border: 5px dashed #00FF00;
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+}
