@@ -40,6 +40,7 @@ if (answerFour === 'yes' || answerFive === 'y'){
 let color = prompt('what is my favorite color?');
 
 //convert the variable of color to lower case and evaluate it
+
 switch (color.toLowerCase()) {
 case 'red':
   alert('my favorite color was red!');
@@ -49,9 +50,37 @@ case 'blue':
   break;
 default:
   alert('you don\'t know what my favorite color was ¯\\_(ツ)_/¯');
-
 // console.log('my favorite colors are blue and Red.');
 }
+
+let answerSix = prompt('guess what is my secret number?');
+let i = 0;
+
+for (i = 0; i < 4; i ++){
+  if (answerSix > 8) {
+    alert('too high!');
+    answerSix = prompt('guess what is my secret number?');
+  }else if (answerSix < 8 ){
+    alert('too low!');
+    answerSix = prompt('guess what is my secret number?');
+  }else {
+    alert('bingo! how did you do that?');
+    break;
+  }
+}
+
+alert('my secret number is 8');
+
+
+
+
+
+
+
+
+
+
+
 
 confirm(`${answerOne}, you know me better now, can we make friends?`);
 
