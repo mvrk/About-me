@@ -24,3 +24,8 @@ section p.more-content {
   margin-right: auto;
   width: 20%;
 }
+
+div {
+  font: 1rem 'Fira Sans', sans-serif;
+  margin-bottom: .5rem;
+}
