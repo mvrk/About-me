@@ -1,11 +1,11 @@
 'use strict'
 
 //if conditional based confirm command
-let answer1 = prompt('what\'s your name?');
-alert('welcome ${answer1}!');
+let answerOne = prompt('what\'s your name?');
+alert('welcome ${answerOne}!');
 
-let answer2 = confirm('Are you ready to play my guessing game?')
-if (answer2 === true){console.log('let\'s play!')}
+let answerTwo = confirm('Are you ready to play my guessing game?').toLowerCase();
+if (answerTwo === 'yes' || answerTwo === 'y'){console.log('let\'s play!')
 alert('let\'s play!')
 
 // logical operator example
