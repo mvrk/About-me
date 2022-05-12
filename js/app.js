@@ -27,8 +27,8 @@ function answerThree() {
 }
 answerThree();
 
-
-let answerFour = prompt('do I like outdoor activities?').toLowerCase();
+answerFour(){
+  let answerFour = prompt('do I like outdoor activities?').toLowerCase();
 
 if (answerFour === 'yes' || answerFour === 'y') {
   alert('It is a sure thing! I love outdoors.');
@@ -37,18 +37,24 @@ if (answerFour === 'yes' || answerFour === 'y') {
 } else if (answerFour === 'no' || answerFour === 'n') {
   alert('but I do like outdoors.');
 }
+}
+answerFour();
 
+function answerFive(){
 let answerFive = prompt('Am I married?').toLowerCase();
 
-if (answerFour === 'yes' || answerFive === 'y') {
+if (answerFive === 'yes' || answerFive === 'y') {
   alert('Yes, you are right, I am married.');
   score++;
   // console.log('Yes, you are right, I am married.');
 } else if (answerFive === 'no' || answerFive === 'n') {
   alert('right answer is opposite.');
 }
+}
+answerFive();
 
-let color = prompt('what is my favorite color?');
+function color(){
+  let color = prompt('what is my favorite color?');
 
 //convert the variable of color to lower case and evaluate it
 
@@ -64,6 +70,8 @@ switch (color.toLowerCase()) {
     score++;
   // console.log('my favorite colors are blue and Red.');
 }
+}
+color();
 
 function answerSix() {
   let answerSix = prompt('guess what is my secret number?');
