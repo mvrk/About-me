@@ -27,49 +27,49 @@ function answerThree() {
 }
 answerThree();
 
-answerFour(){
+function answerFour() {
   let answerFour = prompt('do I like outdoor activities?').toLowerCase();
 
-if (answerFour === 'yes' || answerFour === 'y') {
-  alert('It is a sure thing! I love outdoors.');
-  score++;
-  // console.log('It is a sure thing! I love outdoors.');
-} else if (answerFour === 'no' || answerFour === 'n') {
-  alert('but I do like outdoors.');
-}
+  if (answerFour === 'yes' || answerFour === 'y') {
+    alert('It is a sure thing! I love outdoors.');
+    score++;
+    // console.log('It is a sure thing! I love outdoors.');
+  } else if (answerFour === 'no' || answerFour === 'n') {
+    alert('but I do like outdoors.');
+  }
 }
 answerFour();
 
-function answerFive(){
-let answerFive = prompt('Am I married?').toLowerCase();
+function answerFive() {
+  let answerFive = prompt('Am I married?').toLowerCase();
 
-if (answerFive === 'yes' || answerFive === 'y') {
-  alert('Yes, you are right, I am married.');
-  score++;
-  // console.log('Yes, you are right, I am married.');
-} else if (answerFive === 'no' || answerFive === 'n') {
-  alert('right answer is opposite.');
-}
+  if (answerFive === 'yes' || answerFive === 'y') {
+    alert('Yes, you are right, I am married.');
+    score++;
+    // console.log('Yes, you are right, I am married.');
+  } else if (answerFive === 'no' || answerFive === 'n') {
+    alert('right answer is opposite.');
+  }
 }
 answerFive();
 
-function color(){
+function color() {
   let color = prompt('what is my favorite color?');
 
-//convert the variable of color to lower case and evaluate it
+  //convert the variable of color to lower case and evaluate it
 
-switch (color.toLowerCase()) {
-  case 'red':
-    alert('my favorite color was red!');
-    break;
-  case 'blue':
-    alert('my favorite color was blue!');
-    break;
-  default:
-    alert('you don\'t know what my favorite color was ¯\\_(ツ)_/¯');
-    score++;
-  // console.log('my favorite colors are blue and Red.');
-}
+  switch (color.toLowerCase()) {
+    case 'red':
+      alert('my favorite color was red!');
+      break;
+    case 'blue':
+      alert('my favorite color was blue!');
+      break;
+    default:
+      alert('you don\'t know what my favorite color was ¯\\_(ツ)_/¯');
+      score++;
+    // console.log('my favorite colors are blue and Red.');
+  }
 }
 color();
 
