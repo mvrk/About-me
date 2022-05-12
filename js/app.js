@@ -65,37 +65,45 @@ switch (color.toLowerCase()) {
   // console.log('my favorite colors are blue and Red.');
 }
 
-let answerSix = prompt('guess what is my secret number?');
-let i = 0;
+function answerSix() {
+  let answerSix = prompt('guess what is my secret number?');
+  let i = 0;
 
-for (i = 0; i < 4; i++) {
-  if (answerSix > 8) {
-    alert('too high!');
-    answerSix = prompt('guess what is my secret number?');
-  } else if (answerSix < 8) {
-    alert('too low!');
-    answerSix = prompt('guess what is my secret number?');
-  } else {
-    alert('bingo! how did you do that?!'); score++;
-    break;
-  }
-}
-alert('my secret number is 8');
-console.log('');
-
-let arrLucky = ['a', 'i', 'd', 'v', 'g'];
-
-for (let i = 0; i < 6; i++) {
-  let answerSeven = prompt('can you hit one of my five lucky letters?');
-  for (let j = 0; j < 5; j++) {
-    if (answerSeven === arrLucky[j]) {
-      alert('you hit one of my lucky letters!'); score++;
-      i = 6;
+  for (i = 0; i < 4; i++) {
+    if (answerSix > 8) {
+      alert('too high!');
+      answerSix = prompt('guess what is my secret number?');
+    } else if (answerSix < 8) {
+      alert('too low!');
+      answerSix = prompt('guess what is my secret number?');
+    } else {
+      alert('bingo! how did you do that?!'); score++;
       break;
     }
   }
 }
+answerSix();
+
+alert('my secret number is 8');
+console.log('');
+
+let arrLucky = ['a', 'i', 'd', 'v', 'g'];
+function answerSeven() {
+  for (let i = 0; i < 6; i++) {
+    let answerSeven = prompt('can you hit one of my five lucky letters?');
+    for (let j = 0; j < 5; j++) {
+      if (answerSeven === arrLucky[j]) {
+        alert('you hit one of my lucky letters!'); score++;
+        i = 6;
+        break;
+      }
+    }
+  }
+}
+answerSeven();
 alert('my lucky letters are a, d, i, v, g.');
+
+
 
 confirm(`${answerOne}, you scored ${score} out of 7, you know me better now, can we make friends?`);
 
