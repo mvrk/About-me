@@ -1,17 +1,21 @@
-
-
 h1 {
   font-family: helvetica;
 }
 
-h2 { 
-  font-weight: bold; 
-} 
+h2 {
+  font-weight: bold;
+}
 
 p {
-  color: rgb(8, 7, 85);
+  color: rgb(41, 28, 5);
   font: 1rem 'Fira Sans', sans-serif;
   margin-bottom: .5rem;
+  background-color: rgb(156, 147, 147);
+  width: 500px;
+  border: 5px solid rgb(76, 23, 92);
+  padding: 30px;
+  margin: 20px;
+  
 }
 
 section p.more-content {
@@ -22,7 +26,7 @@ section p.more-content {
   background-color: #0000FF;
 }
 
-#something-else {
+something-else {
   border: 5px dashed #00FF00;
 }
 
@@ -33,14 +37,10 @@ section p.more-content {
   width: 20%;
 }
 
-div {
-  font: 1rem 'Fira Sans', sans-serif;
-  margin-bottom: .5rem;
-}
-
 ol {
   list-style: decimal;
 }
-li {margin-left: 50px;}
 
-
+li {
+  margin-left: 50px;
+}
