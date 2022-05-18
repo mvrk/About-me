@@ -41,14 +41,14 @@ function answerFour() {
 answerFour();
 
 function answerFive() {
-  let answerFive = prompt('Am I married?').toLowerCase();
+  let answerFive = prompt('do I have a dog?').toLowerCase();
 
   if (answerFive === 'yes' || answerFive === 'y') {
-    alert('Yes, you are right, I am married.');
-    score++;
+    alert('I do not have one');
     // console.log('Yes, you are right, I am married.');
   } else if (answerFive === 'no' || answerFive === 'n') {
-    alert('right answer is opposite.');
+    alert('your are right,  but I am getting one');
+    score++;
   }
 }
 answerFive();
